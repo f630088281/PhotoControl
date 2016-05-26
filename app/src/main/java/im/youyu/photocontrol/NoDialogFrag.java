@@ -67,6 +67,8 @@ public class NoDialogFrag extends Fragment implements View.OnClickListener{
                 case VoiceRecognitionClient.CLIENT_STATUS_FINISH:
                     Status.setText(null);
                     UpdateRecognitionResult(obj);
+
+                    //finished的obj为null
                     IsRecognition = false;
                     ReSetUI();
                     break;
